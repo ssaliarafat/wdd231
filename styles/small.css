@@ -1,0 +1,150 @@
+body {
+    font-family: 'YourChosenFont', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+/* LOGO AREA */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+/* HAMBURGER */
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.hamburger::before {
+    content: "☰"
+}
+
+.hamburger.show::before {
+    content: "✖"
+}
+
+/* NAVIGATION */
+nav ul {
+    list-style: none;
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* MENU */
+nav ul.show {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+nav ul li {
+    padding: 1rem 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+/* MAIN CONTENT */
+main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* SECTIONS */
+.about-photo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+section {
+    background: #fff;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #222;
+}
+
+.certificate {
+    color: #222;
+    text-align: center;
+}
+
+/* IMAGE */
+.student-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+    background: #fff;
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.social-links img {
+    width: 30px;
+    margin: 0 8px;
+}
+
+
+#courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#courses-container div {
+    padding: 1rem 2rem;
+    background: #ddd;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.completed {
+    background: #2e7d32;
+    color: white;
+}

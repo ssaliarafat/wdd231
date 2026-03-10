@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My week1 course home page for WDD231">
+    <meta name="author" content="Ssali Arafat">
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=YourChosenFont&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg" alt="My Site Logo">
+            <span>Ssali Arafat</span>
+        </div>
+        <button class="hamburger"></button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chamber.html">Chamber</a></li>
+                <li><a href="final.html">Final</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <div class="about-photo-container">
+            <section class="about-me">
+                <h2>About Me</h2>
+                <p>Hi, my name is Ssali Arafat.
+                    I’m a software development student with a strong passion for visual effects, creativity
+                    and financial technology.
+                    I believe the future lies in connecting technology with creativity and my career goal is to
+                    become a creative developer.
+                </p>
+                <p>
+                    I'm working on projects that could push imagination beyond limits through my ongoing
+                    creative initiative called The Fifth Version,
+                    a platform which will explore visual storytelling and future technologies.</p>
+            </section>
+            <section class="student-photo">
+                <h2>Student Photo</h2>
+                <img src="images/profile.jpeg" alt="My profile picture">
+            </section>
+        </div>
+        <h2 class="certificate">Web Certificate Courses</h2>
+        <section class="course-buttons">
+            <button id="all-courses">All</button>
+            <button id="cse-courses">CSE</button>
+            <button id="wdd-courses">WDD</button>
+        </section>
+        <section id="courses-container"></section>
+        <p id="total-credits"></p>
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/yourusername" target="_blank">
+                <img src="images/github.svg" alt="GitHub" width="30" height="30">
+            </a>
+            <a href="https://twitter.com/yourusername" target="_blank">
+                <img src="images/twitter-x.svg" alt="Twitter" width="30" height="30">
+            </a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank">
+                <img src="images/linkedin.svg" alt="linkedin" width="30" height="30">
+            </a>
+        </div>
+        <div class="footer-info">
+            <p>&copy; <span id="copyright-year"></span> Ssali Arafat, Kampala (Uganda)</p>
+        </div>
+        <div>
+            <p id="lastModified">Last Modified: </p>
+        </div>
+    </footer>
+</body>
+
+</html>

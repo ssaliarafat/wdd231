@@ -1,0 +1,45 @@
+@media (min-width: 768px) {
+
+    /* Hiding hamburger */
+    .hamburger {
+        display: none;
+    }
+
+    /* Horizontal navigation */
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    nav ul li {
+        padding: 0;
+    }
+
+    /* About */
+    .about-photo-container {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+    .about-me {
+        flex: 2;
+    }
+
+    .student-photo {
+        flex: 1;
+    }
+
+    .student-photo img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* Course buttons */
+    .course-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
