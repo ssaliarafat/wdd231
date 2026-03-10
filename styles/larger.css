@@ -39,7 +39,14 @@
     /* Course buttons */
     .course-buttons {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .only-buttons {
+        display: flex;
+        align-items: center;
         gap: 1rem;
     }
 }
