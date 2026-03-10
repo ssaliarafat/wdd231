@@ -35,18 +35,4 @@
         width: 100%;
         max-width: 250px;
     }
-
-    /* Course buttons */
-    .course-buttons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .only-buttons {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
 }
