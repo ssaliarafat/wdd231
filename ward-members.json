@@ -1,0 +1,23 @@
+{
+    "family_name": "Gemini",
+    "move_in_date": "2025-08-12",
+    "number_of_people": 3,
+    "visited_by_bishopric": false,
+    "family_members": [
+        {
+            "name": "Marvel",
+            "gender": "Male",
+            "birthdate": "2004-05-15"
+        },
+        {
+            "name": "Trevor",
+            "gender": "Male",
+            "birthdate": "1999-10-20"
+        },
+        {
+            "name": "Sarah",
+            "gender": "Female",
+            "birthdate": "2008-02-09"
+        }
+    ]
+}
