@@ -1,18 +1,26 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Makindye Chamber Directory</title>
-    <meta name="description" content="Directory of Makindye businesses — WDD231 project">
+
+    <meta name="description"
+        content="Explore the Makindye Chamber Directory to find local businesses, services, and opportunities in Makindye, Kampala.">
     <meta name="author" content="Ssali Arafat">
+
     <link rel="icon" href="favicon.ico">
-    <!-- Facebook -->
+
     <meta property="og:title" content="Makindye Chamber Directory">
-    <meta property="og:description" content="Find local businesses in Makindye, Kampala.">
-    <meta property="og:image" content="https://ssaliarafat.github.io/wdd231/chamber/">
-    <meta property="og:url" content="https://ssaliarafat.github.io/wdd231/chamber/images/">
+    <meta property="og:description"
+        content="Discover trusted businesses, services, and opportunities in Makindye, Kampala through our official chamber directory.">
+    <meta property="og:image" content="https://ssaliarafat.github.io/wdd231/chamber/images/coffee.jpg">
+    <meta property="og:url" content="https://ssaliarafat.github.io/wdd231/chamber/directory.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -25,6 +33,7 @@
     <header class="site-header">
         <h1>Makindye Regional Chamber</h1>
         <button class="hamburger"></button>
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -37,20 +46,24 @@
 
     <main>
         <section class="controls">
-            <label>View:
-                <button id="gridBtn" aria-pressed="true">Grid</button>
-                <button id="listBtn">List</button>
-            </label>
+            <h2 class="visually-hidden">View Controls</h2>
+            <p>View:</p>
+            <button id="gridBtn" aria-pressed="true">Grid</button>
+            <button id="listBtn">List</button>
         </section>
 
-        <section id="members" class="members grid" aria-live="polite"></section>
+        <section id="members" class="members grid" aria-live="polite">
+            <h2 class="visually-hidden">Business Directory</h2>
+        </section>
     </main>
 
     <footer class="site-footer">
         <div class="footer-inner">
+
             <div class="footer-contact">
                 <h2 class="visually-hidden">Contact Information</h2>
                 <p class="chamber-name"><strong>Makindye Chamber Of Commerce</strong></p>
+
                 <address>
                     <span>Makindye District</span><br>
                     <span>Makindye, North</span><br>
@@ -59,7 +72,7 @@
                 </address>
             </div>
 
-            <div class="footer-social" aria-label="Social media links">
+            <div class="footer-social" role="navigation" aria-label="Social media links">
                 <h3 class="visually-hidden">Social media</h3>
 
                 <a href="https://www.youtube.com" class="social-btn" aria-label="YouTube" target="_blank"
@@ -75,7 +88,6 @@
                     rel="noopener">
                     <img src="images/linkedin.svg" alt="LinkedIn icon" width="28" height="20">
                 </a>
-
             </div>
 
             <div class="footer-meta">
@@ -84,6 +96,7 @@
                 <p class="copyright-line">© <span id="footerYear"></span> Makindye Chamber Of Commerce</p>
                 <p class="modified-line">Last Modified: <span id="footerLastModified"></span></p>
             </div>
+
         </div>
     </footer>
 
