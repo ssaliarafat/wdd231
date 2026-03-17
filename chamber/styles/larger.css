@@ -1,0 +1,33 @@
+@media (min-width:800px) {
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.25rem 2rem
+    }
+
+    .members {
+        padding: 2rem 4rem
+    }
+
+    /* Hiding hamburger */
+    .hamburger {
+        display: none;
+    }
+
+    /* Horizontal navigation */
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    nav ul li {
+        padding: 0;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+
+}

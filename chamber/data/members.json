@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Kampala Coffee Co",
+        "address": "Plot 12, Makindye Rd",
+        "phone": "+256701000001",
+        "website": "https://example.com",
+        "image": "coffee.jpg",
+        "level": 3
+    },
+    {
+        "name": "Green Grocers",
+        "address": "Market St, Makindye",
+        "phone": "+256701000002",
+        "website": "https://example.org",
+        "image": "grocer.jpg",
+        "level": 2
+    },
+    {
+        "name": "Sunrise Clinic",
+        "address": "Health Ave",
+        "phone": "+256701000003",
+        "website": "https://clinic.example",
+        "image": "clinic.jpg",
+        "level": 1
+    },
+    {
+        "name": "TechFix UG",
+        "address": "IT Park",
+        "phone": "+256701000004",
+        "website": "https://techfix.example",
+        "image": "tech.jpg",
+        "level": 3
+    },
+    {
+        "name": "Makindye Books",
+        "address": "Library Rd",
+        "phone": "+256701000005",
+        "website": "https://books.example",
+        "image": "books.jpg",
+        "level": 1
+    },
+    {
+        "name": "Blue Taxi",
+        "address": "Transport Hub",
+        "phone": "+256701000006",
+        "website": "https://taxi.example",
+        "image": "taxi.jpg",
+        "level": 2
+    },
+    {
+        "name": "Garden Florist",
+        "address": "Flower Ln",
+        "phone": "+256701000007",
+        "website": "https://florist.example",
+        "image": "florist.jpg",
+        "level": 1
+    },
+    {
+        "name": "Lake View Hotel",
+        "address": "Gaba Road",
+        "phone": "+256 700000005",
+        "website": "https://lakeviewhotel.com",
+        "image": "hotel.jpg",
+        "level": 2
+    }
+]

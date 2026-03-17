@@ -1,0 +1,92 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Makindye Chamber Directory</title>
+    <meta name="description" content="Directory of Makindye businesses — WDD231 project">
+    <meta name="author" content="Ssali Arafat">
+    <link rel="icon" href="favicon.ico">
+    <!-- Facebook -->
+    <meta property="og:title" content="Makindye Chamber Directory">
+    <meta property="og:description" content="Find local businesses in Makindye, Kampala.">
+    <meta property="og:image" content="https://ssaliarafat.github.io/wdd231/chamber/">
+    <meta property="og:url" content="https://ssaliarafat.github.io/wdd231/chamber/images/">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>Makindye Regional Chamber</h1>
+        <button class="hamburger"></button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="controls">
+            <label>View:
+                <button id="gridBtn" aria-pressed="true">Grid</button>
+                <button id="listBtn">List</button>
+            </label>
+        </section>
+
+        <section id="members" class="members grid" aria-live="polite"></section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-contact">
+                <h2 class="visually-hidden">Contact Information</h2>
+                <p class="chamber-name"><strong>Makindye Chamber Of Commerce</strong></p>
+                <address>
+                    <span>Makindye District</span><br>
+                    <span>Makindye, North</span><br>
+                    <a href="mailto:marvelarafat@gmail.com" class="footer-link">makindyechamber@ucc.org</a><br>
+                    <a href="tel:+2235552300" class="footer-link">0708388375</a>
+                </address>
+            </div>
+
+            <div class="footer-social" aria-label="Social media links">
+                <h3 class="visually-hidden">Social media</h3>
+
+                <a href="https://www.youtube.com" class="social-btn" aria-label="YouTube" target="_blank"
+                    rel="noopener">
+                    <img src="images/youtube.svg" alt="YouTube icon" width="28" height="20">
+                </a>
+
+                <a href="https://twitter.com" class="social-btn" aria-label="Twitter" target="_blank" rel="noopener">
+                    <img src="images/twitter-x.svg" alt="Twitter icon" width="28" height="20">
+                </a>
+
+                <a href="https://www.linkedin.com" class="social-btn" aria-label="LinkedIn" target="_blank"
+                    rel="noopener">
+                    <img src="images/linkedin.svg" alt="LinkedIn icon" width="28" height="20">
+                </a>
+
+            </div>
+
+            <div class="footer-meta">
+                <p class="project-line"><strong>WDD231 Class Project</strong></p>
+                <p class="author-line">Ssali Arafat</p>
+                <p class="copyright-line">© <span id="footerYear"></span> Makindye Chamber Of Commerce</p>
+                <p class="modified-line">Last Modified: <span id="footerLastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
