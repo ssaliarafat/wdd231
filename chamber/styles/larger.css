@@ -29,5 +29,31 @@
     nav ul li a {
         color: white;
     }
+     .home-top {
+
+        grid-template-columns: 2fr 1fr 1fr;
+
+    }
+     #spotlight-container {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+
+    }
 
 }
+
+
+
+/* HOMEPAGE TOP GRID */
+
+.home-top {
+
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+
+

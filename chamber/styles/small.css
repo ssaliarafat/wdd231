@@ -2,6 +2,7 @@
     --accent: #0b6;
     --bg: #fff;
     --text: #222;
+    --ext: #024;
 }
 
 /* Base */
@@ -140,31 +141,6 @@ body {
     white-space: nowrap;
 }
 
-/* Responsive Footer */
-@media (max-width: 800px) {
-
-    .footer-inner {
-        grid-template-columns: 1fr;
-        grid-auto-rows: auto;
-        text-align: left;
-    }
-
-    .footer-meta {
-        text-align: left;
-    }
-
-    .footer-social {
-        flex-direction: row;
-    }
-
-    .footer-social {
-        display: flex;
-        justify-content: center;
-        gap: 0.5rem;
-    }
-
-}
-
 
 /* HAMBURGER  ON SMALL SCREEN*/
 .hamburger {
@@ -208,6 +184,8 @@ nav ul.show {
     width: 100%;
     text-align: center;
     border-top: 1px solid #ddd;
+
+    z-index: 999;
 }
 
 nav ul li {
@@ -225,4 +203,126 @@ nav ul li a:hover {
     background-color: rgb(4, 153, 246);
     color: white;
     border-radius: 8px;
+}
+
+
+/* HOMEPAGE */
+/* Hero Section */
+
+.hero {
+    position: relative;
+    max-height: 520px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 10px;
+    background: var(--accent);
+    color: white;
+    padding: 10px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-btn:hover {
+    background: #095c4a;
+}
+
+/* EVENTS + WEATHER */
+/* EVENTS WEATHER FORECAST PANELS */
+
+.home-top>div {
+
+    background: #f4f7f6;
+    border-radius: 8px;
+    padding: 1rem;
+    padding-top: 3rem;
+    /* More space at the top */
+    padding-bottom: 3rem;
+
+}
+
+.home-top h2 {
+
+    background: #f4f7f6;
+    margin: -1rem -1rem 1rem -1rem;
+    padding: .5rem 1rem;
+    font-size: 1.1rem;
+    padding-top: 3rem;
+    /* More space at the top */
+    padding-bottom: 3rem;
+
+}
+
+
+
+/* SPOTLIGHT SECTION */
+.spotlights {
+    margin: 2rem;
+}
+
+
+/* SPOTLIGHT CARDS */
+#spotlight-container section {
+    border: 1px solid #ddd;
+    background: #ddd;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    padding-top: 3rem;
+    /* More space at the top */
+    padding-bottom: 3rem;
+}
+
+#spotlight-container img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    float: left;
+    margin-right: 1rem;
+}
+
+
+/* Responsive Footer */
+@media (max-width: 800px) {
+
+    .footer-inner {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        text-align: left;
+    }
+
+    .footer-meta {
+        text-align: left;
+    }
+
+    .footer-social {
+        flex-direction: row;
+    }
+
+    .footer-social {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
 }
