@@ -1,0 +1,77 @@
+/* General Body Styles - Centers everything on the page */
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%); /* Nice sky-blue gradient */
+    color: #333;
+}
+
+h1 {
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Main Card Styling */
+main {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 350px;
+    width: 90%;
+}
+
+/* Temperature Display */
+#current-temp {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2c3e50;
+    display: block;
+    margin: 10px 0;
+}
+
+/* Icon and Figure Styles */
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+    background-color: #eee; /* Light circle behind the icon */
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+figcaption {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: capitalize; /* Automatically capitalizes the description */
+    color: #555;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #fff;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+    main {
+        padding: 1.5rem;
+    }
+    #current-temp {
+        font-size: 2.5rem;
+    }
+}
