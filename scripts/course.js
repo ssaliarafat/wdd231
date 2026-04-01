@@ -45,6 +45,7 @@ const courses = [
 
 const container = document.querySelector("#courses-container");
 const totalCredits = document.querySelector("#total-credits");
+const courseDetails = document.querySelector("#course-details");
 
 function displayCourses(courseList) {
 
@@ -59,6 +60,10 @@ function displayCourses(courseList) {
         if (course.completed) {
             card.classList.add("completed");
         }
+
+        card.addEventListener("click", () => {
+            displayCourseDetails(course);
+        });
 
         container.appendChild(card);
 
@@ -96,3 +101,23 @@ document.querySelector("#wdd-courses").addEventListener("click", () => {
 });
 
 displayCourses(courses);
+
+// dialog box
+function displayCourseDetails(course) {
+
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits:</strong> ${course.credits}</p>
+    <p><strong>Status:</strong> ${course.completed ? "Completed ✅" : "In Progress ⏳"}</p>
+    `;
+
+    courseDetails.showModal();
+
+    const closeModal = document.querySelector("#closeModal");
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
