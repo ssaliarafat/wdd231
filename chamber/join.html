@@ -9,6 +9,17 @@
 
     <meta name="description" content="Apply to join Makindye Chamber of Commerce membership.">
     <meta name="author" content="Ssali Arafat">
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Join Makindye Chamber">
+    <meta property="og:description"
+        content="Join trusted businesses, services, and opportunities in Makindye, Kampala through our Join page.">
+    <meta property="og:image" content="https://ssaliarafat.github.io/wdd231/chamber/images/coffee.jpg">
+    <meta property="og:url" content="https://ssaliarafat.github.io/wdd231/chamber/join.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -119,7 +130,7 @@
 
                 <h3>NP Membership</h3>
 
-                <button onclick="document.getElementById('npModal').showModal()">
+                <button class="open-modal" data-modal="npModal">
                     Learn More
                 </button>
 
@@ -130,7 +141,7 @@
 
                 <h3>Bronze Membership</h3>
 
-                <button onclick="document.getElementById('bronzeModal').showModal()">
+                <button class="open-modal" data-modal="bronzeModal">
                     Learn More
                 </button>
 
@@ -141,7 +152,7 @@
 
                 <h3>Silver Membership</h3>
 
-                <button onclick="document.getElementById('silverModal').showModal()">
+                <button class="open-modal" data-modal="silverModal">
                     Learn More
                 </button>
 
@@ -152,7 +163,7 @@
 
                 <h3>Gold Membership</h3>
 
-                <button onclick="document.getElementById('goldModal').showModal()">
+                <button class="open-modal" data-modal="goldModal">
                     Learn More
                 </button>
 
@@ -172,7 +183,7 @@
 
         <p>Free membership for non-profit organizations.</p>
 
-        <button onclick="this.closest('dialog').close()">Close</button>
+        <button class="close-modal">Close</button>
 
     </dialog>
 
@@ -183,7 +194,7 @@
 
         <p>Access to networking events and listing in directory.</p>
 
-        <button onclick="this.closest('dialog').close()">Close</button>
+        <button class="close-modal">Close</button>
 
     </dialog>
 
@@ -194,7 +205,7 @@
 
         <p>Includes Bronze benefits plus training workshops.</p>
 
-        <button onclick="this.closest('dialog').close()">Close</button>
+        <button class="close-modal">Close</button>
 
     </dialog>
 
@@ -205,88 +216,53 @@
 
         <p>Includes Silver benefits plus homepage spotlight advertising.</p>
 
-        <button onclick="this.closest('dialog').close()">Close</button>
+        <button class="close-modal">Close</button>
 
     </dialog>
 
 
 
     <footer class="site-footer">
-
         <div class="footer-inner">
 
             <div class="footer-contact">
-
-                <p class="chamber-name">
-                    <strong>Makindye Chamber Of Commerce</strong>
-                </p>
+                <h2 class="visually-hidden">Contact Information</h2>
+                <p class="chamber-name"><strong>Makindye Chamber Of Commerce</strong></p>
 
                 <address>
-
-                    Makindye District<br>
-                    Makindye North<br>
-
-                    <a href="mailto:makindyechamber@ucc.org" class="footer-link">
-
-                        makindyechamber@ucc.org
-
-                    </a>
-
-                    <br>
-
-                    <a href="tel:+256708388375" class="footer-link">
-
-                        0708388375
-
-                    </a>
-
+                    <span>Makindye District</span><br>
+                    <span>Makindye, North</span><br>
+                    <a href="mailto:marvelarafat@gmail.com" class="footer-link">makindyechamber@ucc.org</a><br>
+                    <a href="tel:+2235552300" class="footer-link">0708388375</a>
                 </address>
-
             </div>
 
+            <div class="footer-social" role="navigation" aria-label="Social media links">
+                <h3 class="visually-hidden">Social media</h3>
 
-
-            <div class="footer-social">
-
-                <a href="https://www.youtube.com" target="_blank">
-
-                    <img src="images/youtube.svg">
-
+                <a href="https://www.youtube.com" class="social-btn" aria-label="YouTube" target="_blank"
+                    rel="noopener">
+                    <img src="images/youtube.svg" alt="YouTube icon" width="28" height="20">
                 </a>
 
-                <a href="https://twitter.com" target="_blank">
-
-                    <img src="images/twitter-x.svg">
-
+                <a href="https://twitter.com" class="social-btn" aria-label="Twitter" target="_blank" rel="noopener">
+                    <img src="images/twitter-x.svg" alt="Twitter icon" width="28" height="20">
                 </a>
 
-                <a href="https://linkedin.com" target="_blank">
-
-                    <img src="images/linkedin.svg">
-
+                <a href="https://www.linkedin.com" class="social-btn" aria-label="LinkedIn" target="_blank"
+                    rel="noopener">
+                    <img src="images/linkedin.svg" alt="LinkedIn icon" width="28" height="20">
                 </a>
-
             </div>
-
-
 
             <div class="footer-meta">
-
-                <p>
-                    ©
-                    <span id="footerYear"></span>
-                    Makindye Chamber
-                </p>
-
-                <p>
-                    Last Modified:
-                    <span id="footerLastModified"></span>
-                </p>
-
+                <p class="project-line"><strong>WDD231 Class Project</strong></p>
+                <p class="author-line">Ssali Arafat</p>
+                <p class="copyright-line">© <span id="footerYear"></span> Makindye Chamber Of Commerce</p>
+                <p class="modified-line">Last Modified: <span id="footerLastModified"></span></p>
             </div>
 
         </div>
-
     </footer>
 
 </body>
