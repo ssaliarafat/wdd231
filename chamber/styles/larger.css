@@ -29,16 +29,32 @@
     nav ul li a {
         color: white;
     }
-     .home-top {
+
+    .home-top {
 
         grid-template-columns: 2fr 1fr 1fr;
 
     }
-     #spotlight-container {
+
+    #spotlight-container {
 
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
+
+    }
+
+    /* JOIN PAGE */
+
+    .join-layout {
+
+        display: grid;
+
+        grid-template-columns: 2fr 1fr;
+
+        gap: 2rem;
+
+        padding: 2rem;
 
     }
 
@@ -55,5 +71,3 @@
     padding: 1rem;
 
 }
-
-
