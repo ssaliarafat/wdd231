@@ -3,20 +3,19 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Makindye Chamber Directory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Discover | Makindye Chamber</title>
 
     <meta name="description"
-        content="Explore the Makindye Chamber Directory to find local businesses, services, and opportunities in Makindye, Kampala.">
+        content="Discover Makindye through local places of interest, area highlights, and useful visitor information.">
     <meta name="author" content="Ssali Arafat">
-
     <link rel="icon" href="favicon.ico">
 
-    <meta property="og:title" content="Makindye Chamber Directory">
-    <meta property="og:description"
-        content="Discover trusted businesses, services, and opportunities in Makindye, Kampala through our official chamber directory.">
+    <meta property="og:title" content="Makindye Chamber Discover Page">
+    <meta property="og:description" content="Explore local attractions and places of interest in Makindye, Kampala.">
     <meta property="og:image" content="https://ssaliarafat.github.io/wdd231/chamber/images/coffee.jpg">
-    <meta property="og:url" content="https://ssaliarafat.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://ssaliarafat.github.io/wdd231/chamber/discover.html">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +26,7 @@
     <link rel="stylesheet" href="styles/larger.css">
 
     <script src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/discover.js"></script>
 </head>
 
 <body>
@@ -39,21 +39,21 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="discover.html" aria-current="page">Discover</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="controls">
-            <h2 class="visually-hidden">View Controls</h2>
-            <p>View:</p>
-            <button id="gridBtn" aria-pressed="true">Grid</button>
-            <button id="listBtn">List</button>
+    <main class="discover-page">
+        <section class="discover-intro">
+            <h2>Discover Makindye</h2>
+            <p>Explore places of interest, local landmarks, and community highlights around Makindye and nearby Kampala
+                neighborhoods.</p>
+            <p id="visit-message" class="visit-message" role="status" aria-live="polite"></p>
         </section>
 
-        <section id="members" class="members grid" aria-live="polite">
-            <h2 class="visually-hidden">Business Directory</h2>
+        <section id="places-grid" class="places-grid" aria-label="Eight places of interest in Makindye">
+
         </section>
     </main>
 

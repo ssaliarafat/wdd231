@@ -1,0 +1,78 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto:wght@300;400;700&display=swap');
+
+/* Root Colors */
+:root {
+    --primary-color: #0B3C5D;
+    --accent-color: #F2A900;
+    --background-color: #F4F4F4;
+    --text-color: #222222;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Page Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+/* Main Layout */
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+
+/* Sections */
+section {
+    background: white;
+    margin-bottom: 1.5rem;
+    padding: 1.2rem;
+    border-left: 6px solid var(--accent-color);
+    border-radius: 6px;
+}
+
+
+/* Headings */
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+
+/* Lists */
+ul {
+    padding-left: 1.5rem;
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}

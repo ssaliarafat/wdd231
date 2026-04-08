@@ -1,0 +1,72 @@
+/* Tablet & Desktop Adjustments */
+@media (min-width: 800px) {
+
+    /* Hide hamburger menu on desktop */
+
+    .site-header {
+        flex-wrap: nowrap;
+        padding: 1rem 2rem;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .primary-nav {
+        display: block;
+    }
+
+    .primary-nav ul {
+        display: flex;
+        gap: 2.5rem;
+        justify-content: flex-end;
+    }
+
+    /* Vertical Stacked Layout */
+    .home-grid {
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Hero: Image and Text */
+    .hero.panel {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        align-items: center;
+        padding: 4rem 2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 3.5rem;
+        line-height: 1.1;
+    }
+
+    /* Projects: 2x2 Grid */
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    /* Learning: 3 Column Feed (to show off 15 items) */
+    .news-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .learning-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 2rem;
+    }
+
+    /* Contact: Side-by-side cards */
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}

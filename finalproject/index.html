@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Fifth Version Studios is a creative tech and visual storytelling platform for film projects, learning resources, and collaboration.">
+    <meta name="author" content="Ssali Arafat">
+
+    <meta property="og:title" content="Fifth Version Studios | Home">
+    <meta property="og:description"
+        content="Explore visual storytelling projects, creative learning resources, and contact information for Fifth Version Studios.">
+    <meta property="og:url" content="https://ssaliarafat.github.io/finalproject/">
+    <meta property="og:image" content="images/hero.jpg">
+
+    <title>Fifth Version Studios | Home</title>
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script type="module" src="scripts/home.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Fifth Version Studios home">
+            <span class="brand-mark">FV</span>
+            <span class="brand-name">Fifth Version Studios</span>
+        </a>
+
+        <button class="menu-button" aria-expanded="false" aria-controls="primary-nav">
+            Menu
+        </button>
+
+        <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="learning.html">Learning</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home-grid">
+        <!-- HERO -->
+        <section class="hero-panel">
+            <img src="images/hero.png" alt="A cinematic creative workspace representing Fifth Version Studios">
+            <div class="hero-content">
+                <p class="eyebrow">Creative Tech • Visual Work • Ideas</p>
+                <h1>Fifth Version Studios</h1>
+                <p>
+                    A creative media for cinematic post-production, visual effects concepts and Tech.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="projects.html">Explore Projects</a>
+                    <a class="button button-secondary" href="learning.html">Visit Learning Hub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="projects panel">
+            <div class="section-head">
+                <h2>Our Projects</h2>
+                <p>Selected creative film concepts and visual experiments from Fifth Version Studios.</p>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <img src="images/project-01.jpg" alt="Weight of Water project still" loading="lazy" width="800"
+                        height="600">
+
+                    <h3>Weight of Water</h3>
+
+                    <p>A disaster short film concept about survival, sound, and visual intensity.</p>
+
+                    <button class="button button-secondary open-modal" data-project="weight">
+                        View Project
+                    </button>
+                </article>
+
+
+                <article class="project-card">
+                    <img src="images/project-02.jpg" alt="City After Dark project still" loading="lazy" width="800"
+                        height="600">
+                    <h3>City After Dark</h3>
+                    <p>A neon-lit compositing study focused on mood, light, and atmosphere.</p>
+                    <button class="button button-secondary open-modal" data-project="city">
+                        View Project
+                    </button>
+                </article>
+
+                <article class="project-card">
+                    <img src="images/project-03.jpg" alt="Signal Lost project still" loading="lazy" width="800"
+                        height="600">
+                    <h3>Signal Lost</h3>
+                    <p>A sci-fi motion concept exploring transmission, memory, and mystery.</p>
+                    <button class="button button-secondary open-modal" data-project="signal">
+                        View Project
+                    </button>
+                </article>
+
+                <article class="project-card">
+                    <img src="images/project-04.jpg" alt="Fifth Version intro project still" loading="lazy" width="800"
+                        height="600">
+                    <h3>Fifth Version Intro</h3>
+                    <p>A brand identity test for titles, animation, and visual rhythm.</p>
+                    <button class="button button-secondary open-modal" data-project="intro">
+                        View Project
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <!-- LEARNING RESOURCES -->
+        <section class="learning panel">
+            <div class="section-head learning-head">
+                <div>
+                    <h2>Learning Resources</h2>
+                    <p>Current tech news and inspiration for makers, filmmakers, and creative developers.</p>
+                </div>
+
+                <label class="feed-select">
+                    <span>News feed</span>
+                    <select id="story-feed" name="story-feed">
+                        <option value="top">Top Stories</option>
+                        <option value="new">Newest Stories</option>
+                        <option value="best">Best Stories</option>
+                    </select>
+                </label>
+            </div>
+
+            <div id="news-feed" class="news-grid" aria-live="polite">
+                <p class="status">Loading tech stories…</p>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact panel">
+            <div class="section-head">
+                <h2>Get in Touch</h2>
+                <p>Interested in collaborating, learning, or sharing a project idea?</p>
+            </div>
+
+            <div class="contact-grid">
+                <address class="contact-card">
+                    <h3>Studio Contact</h3>
+                    <p>Kampala, Uganda</p>
+                    <p><a href="mailto:marvelarafat@gmail.com">marvelarafat@gmail.com</a></p>
+                    <p><a href="tel:+256708388375">+256 708 388 375</a></p>
+                </address>
+
+                <div class="contact-card">
+                    <h3>Start a Conversation</h3>
+                    <p>Use the contact page to send project ideas, questions, or partnership requests.</p>
+                    <a class="button button-primary" href="contact.html">Open Contact Form</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECT MODAL -->
+
+        <dialog id="project-modal">
+
+            <div class="modal-inner">
+
+                <div id="modal-content"></div>
+
+                <button id="close-modal">Close</button>
+
+            </div>
+
+        </dialog>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>© <span id="year"></span> Fifth Version Studios</p>
+        </div>
+
+        <div class="footer-social" role="navigation" aria-label="Social media links">
+
+            <a href="https://www.youtube.com" class="social-btn" aria-label="YouTube" target="_blank" rel="noopener">
+                <img src="images/youtube.svg" alt="YouTube icon" width="28" height="20">
+            </a>
+
+            <a href="https://twitter.com" class="social-btn" aria-label="Twitter" target="_blank" rel="noopener">
+                <img src="images/twitter-x.svg" alt="Twitter icon" width="28" height="20">
+            </a>
+
+            <a href="https://www.linkedin.com" class="social-btn" aria-label="LinkedIn" target="_blank" rel="noopener">
+                <img src="images/linkedin.svg" alt="LinkedIn icon" width="28" height="20">
+            </a>
+
+            <a href="https://www.facebook.com" class="social-btn" aria-label="Facebook" target="_blank" rel="noopener">
+                <img src="images/facebook.svg" alt="Facebook icon" width="28" height="20">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
