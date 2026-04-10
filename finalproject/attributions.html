@@ -4,75 +4,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fifth Version Studios | Attributions</title>
-
-    <meta name="description" content="Resource attributions for Fifth Version Studios website content.">
+    <meta name="description"
+        content="Fifth Version Studios is a creative tech and visual storytelling platform for film projects, learning resources, and collaboration.">
     <meta name="author" content="Ssali Arafat">
+
+    <meta property="og:title" content="Fifth Version Studios | Home">
+    <meta property="og:description"
+        content="Explore visual storytelling projects, creative learning resources, and contact information for Fifth Version Studios.">
+    <meta property="og:url" content="https://ssaliarafat.github.io/finalproject/">
+    <meta property="og:image" content=" https://ssaliarafat.github.io/wdd231/finalproject/images/hero.png">
+
+    <title>Fifth Version Studios | Home</title>
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+
+    <script type="module" src="scripts/home.js"></script>
 </head>
 
 <body>
-
     <header class="site-header">
-        <a href="index.html" class="brand">
+        <nav class="brand" aria-label="Fifth Version Studios home">
             <span class="brand-mark">FV</span>
             <span class="brand-name">Fifth Version Studios</span>
-        </a>
+        </nav>
+
+        <button type="button" class="menu-button" aria-expanded="false" aria-controls="primary-nav">
+            Menu
+        </button>
+
+        <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="learning.html">Learning</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="home-grid">
 
-        <section class="panel">
+    <body>
 
-            <h1>Attributions</h1>
+        <header class="site-header">
+            <a href="index.html" class="brand">
+                <span class="brand-mark">FV</span>
+                <span class="brand-name">Fifth Version Studios</span>
+            </a>
+        </header>
 
-            <p>This page lists external resources used in the development of the Fifth Version Studios website project.
-            </p>
+        <main class="home-grid">
 
-            <h2>Fonts</h2>
+            <section class="panel">
 
-            <ul>
-                <li>Orbitron – Provided by Google Fonts</li>
-                <li>Roboto – Provided by Google Fonts</li>
-            </ul>
+                <h1>Attributions</h1>
 
-            <h2>Icons</h2>
+                <p>This page lists external resources used in the development of the Fifth Version Studios website
+                    project.
+                </p>
 
-            <ul>
-                <li>Social media icons (YouTube, LinkedIn, Facebook, Twitter) sourced from open SVG icon libraries</li>
-            </ul>
+                <h2>Fonts</h2>
 
-            <h2>Images</h2>
+                <ul>
+                    <li>Orbitron – Provided by Google Fonts</li>
+                    <li>Roboto – Provided by Google Fonts</li>
+                </ul>
 
-            <ul>
-                <li>Project concept images are created using AI-generation tools</li>
-                <li>Additional supporting graphics created by me</li>
-            </ul>
+                <h2>Icons</h2>
 
-            <h2>Data Sources</h2>
+                <ul>
+                    <li>Social media icons (YouTube, LinkedIn, Facebook, Twitter) sourced from open SVG icon libraries
+                    </li>
+                </ul>
 
-            <ul>
-                <li>Project data loaded from a local JSON file created by me, the site author</li>
-            </ul>
+                <h2>Images</h2>
 
-            <h2>Development Tools</h2>
+                <ul>
+                    <li>Project concept images are created using AI-generation tools</li>
+                    <li>Additional supporting graphics created by me</li>
+                </ul>
 
-            <ul>
-                <li>Website built using HTML, CSS, and JavaScript</li>
-                <li>No third-party templates or frameworks were used</li>
-            </ul>
+                <h2>Data Sources</h2>
 
-        </section>
+                <ul>
+                    <li>Project data loaded from a local JSON file created by me, the site author</li>
+                </ul>
 
-    </main>
+                <h2>Development Tools</h2>
 
-    <footer class="site-footer">
-        <p>© <span id="year"></span> Fifth Version Studios</p>
-    </footer>
+                <ul>
+                    <li>Website built using HTML, CSS, and JavaScript</li>
+                    <li>No third-party templates or frameworks were used</li>
+                </ul>
 
-</body>
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <p>© <span id="year"></span> Fifth Version Studios</p>
+            </div>
+
+            <nav class="footer-nav" aria-label="Footer links">
+                <a href="attributions.html">Attributions</a>
+                <a href="https://your-video-link-here" target="_blank" rel="noopener">Project Video</a>
+            </nav>
+
+            <div class="footer-social" role="navigation" aria-label="Social media links">
+
+                <a href="https://www.youtube.com" class="social-btn" aria-label="YouTube" target="_blank"
+                    rel="noopener">
+                    <img src="images/youtube.svg" alt="YouTube icon" width="28" height="20">
+                </a>
+
+                <a href="https://twitter.com" class="social-btn" aria-label="Twitter" target="_blank" rel="noopener">
+                    <img src="images/twitter-x.svg" alt="Twitter icon" width="28" height="20">
+                </a>
+
+                <a href="https://www.linkedin.com" class="social-btn" aria-label="LinkedIn" target="_blank"
+                    rel="noopener">
+                    <img src="images/linkedin.svg" alt="LinkedIn icon" width="28" height="20">
+                </a>
+
+                <a href="https://www.facebook.com" class="social-btn" aria-label="Facebook" target="_blank"
+                    rel="noopener">
+                    <img src="images/facebook.svg" alt="Facebook icon" width="28" height="20">
+                </a>
+            </div>
+        </footer>
+    </body>
 
 </html>
