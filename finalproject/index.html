@@ -16,7 +16,7 @@
 
     <title>Fifth Version Studios | Home</title>
 
-    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="images/favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,7 +55,8 @@
     <main class="home-grid">
         <!-- HERO -->
         <section class="hero-panel">
-            <img src="images/hero.png" alt="A cinematic creative workspace representing Fifth Version Studios">
+            <img src="images/hero.png" alt="A cinematic creative workspace representing Fifth Version Studios"
+                loading="lazy">
             <div class="hero-content">
                 <p class="eyebrow">Creative Tech • Visual Work • Ideas</p>
                 <h1>Fifth Version Studios</h1>
@@ -73,17 +74,21 @@
         <section class="projects panel">
             <div class="section-head">
                 <h2>Our Projects</h2>
-                <p>Selected creative film concepts and visual experiments from Fifth Version Studios.</p>
+                <p>
+                    Our Creative Pipeline includes multiple formats,
+                    from AI-assisted filmmaking and live-action production <br>to animation and graphic.
+                    Each format allows us to explore imagination in a unique way.
+                </p>
             </div>
 
             <div class="project-grid">
                 <article class="project-card">
-                    <img src="images/project-01.jpg" alt="Weight of Water project still" loading="lazy" width="800"
+                    <img src="images/story11.jpeg" alt="Live action projects still" loading="lazy" width="800"
                         height="600">
 
-                    <h3>Weight of Water</h3>
+                    <h3>Live-Action</h3>
 
-                    <p>A disaster short film concept about survival, sound, and visual intensity.</p>
+                    <p>Grounded cinematic stories created with real actors, locations, and emotional performances.</p>
 
                     <button class="button button-secondary open-modal" data-project="weight">
                         View Project
@@ -92,30 +97,31 @@
 
 
                 <article class="project-card">
-                    <img src="images/project-02.jpg" alt="City After Dark project still" loading="lazy" width="800"
+                    <img src="images/vfx-3.jpg" alt="2D and 3DAnimation projects still" loading="lazy" width="800"
                         height="600">
-                    <h3>City After Dark</h3>
-                    <p>A neon-lit compositing study focused on mood, light, and atmosphere.</p>
+                    <h3>Animation</h3>
+                    <p>Stylized worlds where imagination expands beyond physical limitations.</p>
                     <button class="button button-secondary open-modal" data-project="city">
                         View Project
                     </button>
                 </article>
 
                 <article class="project-card">
-                    <img src="images/project-03.jpg" alt="Signal Lost project still" loading="lazy" width="800"
+                    <img src="images/story2.jpeg" alt="Graphic storytelling projects still" loading="lazy" width="800"
                         height="600">
-                    <h3>Signal Lost</h3>
-                    <p>A sci-fi motion concept exploring transmission, memory, and mystery.</p>
+                    <h3>Comic Storytelling</h3>
+                    <p>Graphic narratives that build characters and universes panel by panel.</p>
                     <button class="button button-secondary open-modal" data-project="signal">
                         View Project
                     </button>
                 </article>
 
                 <article class="project-card">
-                    <img src="images/project-04.jpg" alt="Fifth Version intro project still" loading="lazy" width="800"
-                        height="600">
-                    <h3>Fifth Version Intro</h3>
-                    <p>A brand identity test for titles, animation, and visual rhythm.</p>
+                    <img src="images/cgi.jpg" alt="Fifth Version AI cinematic projects in progress" loading="lazy"
+                        width="800" height="600">
+                    <h3>AI Cinema</h3>
+                    <p>
+                    <p>Exploring new storytelling possibilities through artificial intelligence-assisted filmmaking.</p>
                     <button class="button button-secondary open-modal" data-project="intro">
                         View Project
                     </button>
@@ -164,7 +170,7 @@
                 <div class="contact-card">
                     <h3>Start a Conversation</h3>
                     <p>Use the contact page to send project ideas, questions, or partnership requests.</p>
-                    <a class="button button-primary" href="contact.html">Open Contact Form</a>
+                    <button class="button button-primary" href="contact.html">Open Contact Form</button>
                 </div>
             </div>
         </section>
@@ -187,6 +193,11 @@
     <footer class="site-footer">
         <div class="footer-inner">
             <p>© <span id="year"></span> Fifth Version Studios</p>
+        </div>
+
+        <div class="footer-nav" aria-label="Footer links">
+            <a href="attributions.html">Attributions</a>
+            <a href="https://your-video-link-here" target="_blank" rel="noopener">Project Video</a>
         </div>
 
         <div class="footer-social" role="navigation" aria-label="Social media links">

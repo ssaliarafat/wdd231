@@ -22,7 +22,7 @@
         justify-content: flex-end;
     }
 
-    /* Vertical Stacked Layout */
+    /* Vertical Layout */
     .home-grid {
         display: flex;
         flex-direction: column;
@@ -69,4 +69,5 @@
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
+
 }

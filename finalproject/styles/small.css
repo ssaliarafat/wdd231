@@ -25,14 +25,23 @@ body {
     line-height: 1.6;
 }
 
-/* Hero Image */
+/* Hero section */
+
+.hero-panel {
+    display: grid;
+    gap: 0;
+}
 
 .hero-panel img {
     width: 100%;
+    aspect-ratio: 16 / 9;
     height: auto;
-    max-height: 280px;
     object-fit: cover;
-    border-radius: 18px 18px 0 0;
+    max-height: 320px;
+}
+
+.hero-content {
+    padding: 1.25rem;
 }
 
 a {
@@ -214,9 +223,10 @@ a:focus-visible {
 }
 
 .button-primary {
-    background: #444;
+    background: var(--accent);
     color: #0d0d0d;
 }
+
 
 .button-primary:hover,
 .button-primary:focus-visible {
@@ -235,6 +245,7 @@ a:focus-visible {
     background: rgba(0, 163, 255, 0.08);
 }
 
+.project-grid,
 .projects,
 .learning,
 .contact {
@@ -323,79 +334,6 @@ a:focus-visible {
     color: var(--accent);
 }
 
-/* =========================
-PROJECT MODAL STYLING
-========================= */
-
-dialog {
-    border-top: #00a3ff;
-    border-bottom: #00a3ff;
-    border-radius: 18px;
-    padding: 0;
-    max-width: 500px;
-    width: 90%;
-    background: #1f1f1f;
-    color: white;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    animation: modalFade 0.3s ease;
-}
-
-/* modal backdrop overlay */
-
-dialog::backdrop {
-    background: rgba(0, 0, 0, 0.6);
-}
-
-/* modal inner content */
-
-.modal-inner {
-    padding: 2rem;
-}
-
-/* modal heading */
-
-.modal-inner h2 {
-    margin-bottom: 1rem;
-}
-
-/* modal description */
-
-.modal-inner p {
-    margin-bottom: 2rem;
-    line-height: 1.6;
-}
-
-/* close button */
-
-#close-modal {
-    background: #00a3ff;
-    color: white;
-    border: none;
-    padding: .7rem 1.4rem;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-#close-modal:hover {
-    background: #444;
-}
-
-/* animation */
-
-@keyframes modalFade {
-
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-}
-
 /* FOOTER */
 
 .site-footer {
@@ -404,6 +342,28 @@ dialog::backdrop {
     background: #090909;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+}
+
+.footer-social {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.06);
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-btn:hover {
+    background: var(--accent);
 }
 
 .footer-inner {
@@ -414,9 +374,7 @@ dialog::backdrop {
     color: var(--muted);
 }
 
-.footer-social {
-    margin-left: auto;
-}
+
 
 .footer-nav {
     display: flex;
@@ -426,4 +384,176 @@ dialog::backdrop {
 
 .footer-nav a {
     color: var(--text);
+}
+
+
+/* PROJECT MODAL STYLING */
+
+dialog {
+    border: none;
+    border-radius: 18px;
+    padding: 0;
+    width: min(92vw, 560px);
+    background: var(--surface-2);
+    color: var(--text);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    animation: modalFade 0.25s ease;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.72);
+    backdrop-filter: blur(4px);
+}
+
+.modal-inner {
+    padding: 1.25rem;
+    display: grid;
+    gap: 1rem;
+}
+
+#close-modal {
+    justify-self: end;
+    border: none;
+    border-radius: 999px;
+    padding: 0.7rem 1rem;
+    background: var(--accent);
+    color: #0d0d0d;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#close-modal:hover,
+#close-modal:focus-visible {
+    background: #7fd1ff;
+}
+
+@keyframes modalFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* 
+   CONTACT PAGE FORM STYLING
+ */
+
+.contact-form {
+    display: grid;
+    gap: 0.9rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    max-width: auto;
+}
+
+/* labels */
+
+.contact-form label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+}
+
+/* inputs */
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.65rem 0.8rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.02);
+    color: var(--text);
+    font-family: Roboto, sans-serif;
+    font-size: 0.95rem;
+}
+
+/* placeholder tone */
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: var(--muted);
+}
+
+/* focus glow */
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(124, 198, 255, 0.2);
+}
+
+/* submit button spacing */
+
+.contact-form button {
+    margin-top: 0.6rem;
+    width: fit-content;
+}
+
+/* 
+   THANK YOU PAGE RESULTS STYLING
+ */
+.section-head {
+    text-align: center;
+}
+
+#results {
+    margin: 1.5rem auto 0 auto;
+    display: grid;
+    gap: 0.7rem;
+    max-width: 600px;
+}
+
+#results p {
+    background: var(--surface-2);
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+#results strong {
+    color: var(--accent);
+}
+
+/* Smaller project cards */
+.project-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.project-card {
+    display: grid;
+    gap: 0.75rem;
+    padding: 0.85rem;
+}
+
+.project-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 0;
+}
+
+.project-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.35rem;
+}
+
+.project-card p {
+    font-size: 0.92rem;
+}
+
+.project-card .button {
+    width: fit-content;
 }

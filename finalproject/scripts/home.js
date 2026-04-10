@@ -250,37 +250,36 @@ const projectData = {
 
     weight: {
 
-        title: "Weight of Water",
+        title: "Live-ACtion",
 
         description:
-            "A cinematic disaster short exploring survival during extreme flooding using immersive sound and visual storytelling."
+            "Live-action filmmaking focuses on authentic human performance captured in real environments. These productions emphasize emotional storytelling, grounded characters, and cinematic realism."
 
     },
 
     city: {
 
-        title: "City After Dark",
+        title: "Animation",
 
         description:
-            "A neon lighting compositing experiment studying reflections, atmosphere, and cinematic night environments."
-
+            "Animation allows stories to move beyond physical limitations into stylized cinematic worlds shaped entirely by imagination. Characters, environments, and visual effects can be designed with complete creative freedom."
     },
 
     signal: {
 
-        title: "Signal Lost",
+        title: "Comic Storytelling",
 
         description:
-            "A sci-fi concept about broken transmissions and memory fragments drifting through space."
+            "graphic stories often serve as the foundation for future animated or live-action adaptations, allowing ideas to grow into larger story worlds over time.."
 
     },
 
     intro: {
 
-        title: "Fifth Version Intro",
+        title: "AI Cinema",
 
         description:
-            "A motion graphics identity test exploring typography animation and futuristic branding."
+            "AI Cinema at Fifth Version Studios explores a new frontier of filmmaking where artificial intelligence assists in visual development, scene creation, concept storytelling, and experimental production workflows."
 
     }
 

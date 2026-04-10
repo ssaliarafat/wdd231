@@ -1,0 +1,148 @@
+[
+    {
+        "id": "proj1",
+        "title": "Weight of Water (End Of Times)",
+        "category": "ai",
+        "thumb": "images/story16-1.jpeg",
+        "image": "images/cgi1-2.jpg",
+        "description": "A coastal community faces impossible choices as a towering tsunami turns survival into a race against time.",
+        "genre": "Disaster Short Film",
+        "year": 2026
+    },
+    {
+        "id": "proj2",
+        "title": "Shadows Of The Promise",
+        "category": "live",
+        "thumb": "images/story10.jpeg",
+        "description": "A broken promise awakens a presence from the unseen world, forcing two souls confront love, guilt, and consequences beyond death.",
+        "genre": "Supernatural Romantic Horror",
+        "year": 2025
+    },
+    {
+        "id": "proj3",
+        "title": "Reset",
+        "category": "live",
+        "thumb": "images/story7.jpeg",
+        "description": "Trapped in a day, a young man relives the exact same day and tries to break the cycle uncovering what went wrong.",
+        "genre": "Psychological Time-Loop Drama",
+        "year": 2026
+    },
+    {
+        "id": "proj4",
+        "title": "Beyond the Veil",
+        "category": "live",
+        "thumb": "images/story11-1.jpeg",
+        "description": "After death, a female spirit discovers the unseen layers of existence and struggles to reconnect to the world she left behind.",
+        "genre": "Spiritual Romantic Drama",
+        "year": 2026
+    },
+    {
+        "id": "proj5",
+        "title": "Mr Marvelous",
+        "category": "animation",
+        "thumb": "images/story13-1.jpeg",
+        "description": "A boy begins searching for the mysterious hero who once saved his life, only to discover destiny may be closer than he imagined.",
+        "genre": "Superhero Fantasy Adventure",
+        "year": 2025
+    },
+    {
+        "id": "proj6",
+        "title": "Fabulous Three",
+        "category": "animation",
+        "thumb": "images/story19.jpeg",
+        "image": "images/vfx-5.jpg",
+        "description": "Three overlooked students awaken ancient abilities that transform them into unlikely protectors of their city.",
+        "genre": "Teen Superhero Adventure",
+        "year": 2025
+    },
+    {
+        "id": "proj7",
+        "title": "Direct Current",
+        "category": "comic",
+        "thumb": "images/story4.jpeg",
+        "description": "Struck by lightning and changed forever, a student discovers his new power makes him both a target and a protector.",
+        "genre": "Sci-Fi Superhero Action",
+        "year": 2022
+    },
+    {
+        "id": "proj8",
+        "title": "Clan-Shift",
+        "category": "ai",
+        "thumb": "images/story14.jpeg",
+        "description": "Descendants of ancient clans awaken animal-form spirits tied to identity, heritage and hidden responsibilities.",
+        "genre": "Mythic Fantasy Adventure",
+        "year": 2026
+    },
+    {
+        "id": "proj9",
+        "title": "The Miner",
+        "category": "animation",
+        "thumb": "images/vfx-4.jpg",
+        "description": "When the earth begins to fracture, a survivor learns to control the ground and use his new abilities to stop a coming collapse.",
+        "genre": "Elemental Fantasy Action",
+        "year": 2024
+    },
+    {
+        "id": "proj10",
+        "title": "Rain-bound",
+        "category": "animation",
+        "thumb": "images/story12-1.jpeg",
+        "description": "Strange figures begin appearing only during rainfall, bringing warnings that blur the line between myth and reality.",
+        "genre": "Mystery Fantasy Drama",
+        "year": 2024
+    },
+    {
+        "id": "proj11",
+        "title": "The Dreamers",
+        "category": "ai",
+        "thumb": "images/story2.jpeg",
+        "description": "Protectors from a hidden realm enter human dreams to defend sleepers from forces that feed on fear.",
+        "genre": "Fantasy Adventure",
+        "year": 2024
+    },
+    {
+        "id": "proj12",
+        "title": "Us",
+        "category": "live",
+        "thumb": "images/comp1.jpg",
+        "description": "A quiet outsider discovers he is never truly alone when an unseen companion begins influencing his reality.",
+        "genre": "Psychological Supernatural Drama",
+        "year": 2023
+    },
+    {
+        "id": "proj13",
+        "title": "The Hidden Coven",
+        "category": "ai",
+        "thumb": "images/story15.jpeg",
+        "description": "A secret circle of witches protects an ancient gateway that should never be opened again.",
+        "genre": "Dark Fantasy Thriller",
+        "year": 2025
+    },
+    {
+        "id": "proj14",
+        "title": "End Of Times",
+        "category": "live",
+        "thumb": "images/vfx-5.jpg",
+        "description": "A violent tornado tears through a community as survival depends on courage, timing, and impossible decisions.",
+        "genre": "Disaster Drama",
+        "year": 2022
+    },
+    {
+        "id": "proj15",
+        "title": "End Of Times: Firefall",
+        "category": "ai",
+        "thumb": "images/story18.jpeg",
+        "description": "Meteor fragments ignite the sky as humanity faces a final test beneath a burning horizon.",
+        "genre": "Apocalyptic Disaster Film",
+        "year": 2026
+    },
+    {
+        "id": "proj16",
+        "title": "Shadows Of The Promise: Reckoning",
+        "category": "ai",
+        "thumb": "images/story5-1.png",
+        "description": "The consequences of a broken vow return stronger than before as the darkness begins claiming more than memories.",
+        "genre": "Supernatural Horror",
+        "year": 2026
+    }
+]

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Fifth Version Studios to collaborate on creative tech and film projects.">
+    <meta name="author" content="Ssali Arafat">
+    <meta property="og:title" content="Fifth Version Studios | Contact">
+    <meta property="og:description" content="Send project ideas and collaboration requests to Fifth Version Studios.">
+    <meta property="og:url" content="https://ssaliarafat.github.io/finalproject/contact.html">
+    <meta property="og:image" content="images/hero.png">
+    <title>Fifth Version Studios | Contact</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script type="module" src="scripts/contact.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Fifth Version Studios home">
+            <span class="brand-mark">FV</span>
+            <span class="brand-name">Fifth Version Studios</span>
+        </a>
+
+        <button class="menu-button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+
+        <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="learning.html">Learning</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home-grid">
+        <section class="contact panel">
+            <div class="section-head">
+                <h1>Contact</h1>
+                <p>Send a project idea, collaboration request, or creative question.</p>
+            </div>
+
+            <form method="get" action="thanks.html" id="contact-form" class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+                <label for="project">Project Details</label>
+                <textarea id="project" name="project" rows="6" placeholder="Describe your project..."></textarea>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <button type="submit" class="button button-primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>© <span id="year"></span> Fifth Version Studios</p>
+        </div>
+
+        <div class="footer-nav" aria-label="Footer links">
+            <a href="attributions.html">Attributions</a>
+            <a href="https://your-video-link-here" target="_blank" rel="noopener">Project Video</a>
+        </div>
+
+        <div class="footer-social" role="navigation" aria-label="Social media links">
+
+            <a href="https://www.youtube.com" class="social-btn" aria-label="YouTube" target="_blank" rel="noopener">
+                <img src="images/youtube.svg" alt="YouTube icon" width="28" height="20">
+            </a>
+
+            <a href="https://twitter.com" class="social-btn" aria-label="Twitter" target="_blank" rel="noopener">
+                <img src="images/twitter-x.svg" alt="Twitter icon" width="28" height="20">
+            </a>
+
+            <a href="https://www.linkedin.com" class="social-btn" aria-label="LinkedIn" target="_blank" rel="noopener">
+                <img src="images/linkedin.svg" alt="LinkedIn icon" width="28" height="20">
+            </a>
+
+            <a href="https://www.facebook.com" class="social-btn" aria-label="Facebook" target="_blank" rel="noopener">
+                <img src="images/facebook.svg" alt="Facebook icon" width="28" height="20">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
