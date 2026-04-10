@@ -46,6 +46,10 @@ a {
     text-underline-offset: 0.2em;
 }
 
+a:not(.button) {
+    color: var(--accent);
+}
+
 a:hover,
 a:focus-visible {
     text-decoration: none;
@@ -113,7 +117,7 @@ a:focus-visible {
 
 .menu-button:hover,
 .menu-button:focus-visible {
-    background: rgba(0, 163, 255, 0.22);
+    background: rgba(0, 163, 255, 0.12);
 }
 
 .primary-nav {
@@ -445,9 +449,9 @@ dialog::backdrop {
 .contact-form {
     display: grid;
     gap: 0.9rem;
-    margin-top: 1rem;
-    margin-left: auto;
-    max-width: auto;
+    margin: 1rem auto 0 auto;
+    max-width: 700px;
+    width: 100%;
 }
 
 /* labels */
@@ -455,6 +459,7 @@ dialog::backdrop {
 .contact-form label {
     font-weight: 600;
     font-size: 0.9rem;
+    margin: auto;
     letter-spacing: 0.04em;
 }
 
@@ -470,6 +475,7 @@ dialog::backdrop {
     color: var(--text);
     font-family: Roboto, sans-serif;
     font-size: 0.95rem;
+    margin: 1rem;
 }
 
 /* placeholder tone */
