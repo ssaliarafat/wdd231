@@ -113,7 +113,7 @@ a:focus-visible {
 
 .menu-button:hover,
 .menu-button:focus-visible {
-   background: rgba(0, 163, 255, 0.22);
+    background: rgba(0, 163, 255, 0.22);
 }
 
 .primary-nav {
@@ -250,6 +250,7 @@ a:focus-visible {
 
 .section-head {
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .project-grid,
@@ -327,7 +328,7 @@ a:focus-visible {
 }
 
 .contact-card a {
-    color: var(--accent);
+    color: white;
 }
 
 /* FOOTER */
