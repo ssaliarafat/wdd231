@@ -61,9 +61,6 @@ a:focus-visible {
     border-radius: 18px;
     box-shadow: var(--shadow);
     overflow: hidden;
-
-    max-width: 900px;
-    margin: auto;
 }
 
 .site-header {
