@@ -46,8 +46,8 @@ a {
     text-underline-offset: 0.2em;
 }
 
-a:not(.button) {
-    color: var(--accent);
+.button.button-primary {
+    color: #0d0d0d;
 }
 
 a:hover,
@@ -61,6 +61,9 @@ a:focus-visible {
     border-radius: 18px;
     box-shadow: var(--shadow);
     overflow: hidden;
+
+    max-width: 900px;
+    margin: auto;
 }
 
 .site-header {
@@ -560,6 +563,12 @@ dialog::backdrop {
     width: fit-content;
 }
 
+
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+}
+
 /* 
    ATTRIBUTIONS PAGE STYLING
  */
@@ -601,13 +610,6 @@ dialog::backdrop {
 }
 
 /* attribution container spacing */
-
-.panel {
-    max-width: 900px;
-    margin: auto;
-}
-
-/* subtle hover highlight */
 
 .panel li:hover {
     color: var(--text);

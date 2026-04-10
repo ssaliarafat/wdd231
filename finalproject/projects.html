@@ -49,7 +49,7 @@
                 <h1>Projects</h1>
                 <p>Step inside the timeline of our production Studio where cinematic ideas come to life</p>
             </div>
-            <div class="filters" aria-label="Project filters">
+            <div class="filters" role="group" aria-label="Project filters">
                 <button class="button button-secondary filter active" data-filter="all">All Stories</button>
                 <button class="button button-secondary filter" data-filter="ai">AI Cinema</button>
                 <button class="button button-secondary filter" data-filter="live">Live Action</button>
@@ -57,7 +57,9 @@
                 <button class="button button-secondary filter" data-filter="comic">Comic Universe</button>
             </div>
             <br>
-            <section id="project-grid" class="project-grid" aria-live="polite"></section>
+            <section id="project-grid" class="project-grid" aria-live="polite">
+                <h2 class="visually-hidden">Project Results</h2>
+            </section>
         </section>
 
         <dialog id="project-modal">
