@@ -459,7 +459,7 @@ dialog::backdrop {
 .contact-form label {
     font-weight: 600;
     font-size: 0.9rem;
-    margin: auto;
+    margin: 1rem;
     letter-spacing: 0.04em;
 }
 
