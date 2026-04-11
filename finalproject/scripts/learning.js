@@ -83,7 +83,7 @@ async function loadNewsStories(feedType = "top") {
     }
 }
 
-// ---------- RENDER CARDS ----------
+//  RENDER CARDS 
 function renderNewsStories(stories, feedType) {
     if (!newsFeed) return;
 

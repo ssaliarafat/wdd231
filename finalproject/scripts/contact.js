@@ -1,9 +1,8 @@
-// ===============================
+
 // Fifth Version Studios - Contact Page
 // Features:
 // 1) Responsive hamburger navigation
 // 2) Add a timestamp before submitting the form
-// ===============================
 
 // ---------- DOM ELEMENTS ----------
 const menuButton = document.querySelector(".menu-button");

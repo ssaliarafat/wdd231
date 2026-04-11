@@ -1,11 +1,10 @@
-// ===============================
+
 // Fifth Version Studios - Projects Page
 // Features:
 // 1) Fetch project data from local JSON
 // 2) Render 15 project cards dynamically
 // 3) Filter cards by category
 // 4) Open an accessible modal dialog for details
-// ===============================
 
 // ---------- DOM ELEMENTS ----------
 const menuButton = document.querySelector(".menu-button");
@@ -33,7 +32,7 @@ if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
 }
 
-// ---------- FETCH PROJECT DATA ----------
+// FETCH PROJECT DATA 
 async function loadProjects() {
     if (!grid) return;
 
@@ -53,7 +52,7 @@ async function loadProjects() {
     }
 }
 
-// ---------- RENDER PROJECT CARDS ----------
+// RENDER PROJECT CARDS 
 function renderProjects(items) {
     if (!grid) return;
 
